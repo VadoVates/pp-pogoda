@@ -215,6 +215,11 @@ int main()
 			case 0:
 			{
 				cout << "Wyjscie z programu" << endl;
+				for(int i=0; i<N; i++)
+				{
+					delete [] kalendarz[i];
+				}
+				delete []kalendarz;
 				break;
 			}
 			default:
